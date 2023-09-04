@@ -6,14 +6,20 @@ import App2 from './components/App2';
 import { App3 } from './components/App3';
 import { App4 } from './components/App4';
 import { App5 } from './components/App5';
-import { Lista } from './components/Lista';
+import { Lista, Item } from './components/Lista';
 import reportWebVitals from './reportWebVitals';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Lista/>
+    <Lista>
+        quero arro
+        <Item key={999} id={999} completo={true}>lavar as louças</Item>
+        <Item key={999} id={999} completo={false}>terminar curso de reat</Item>
+        <Item key={999} id={999} completo={false}>voltar ao bootcamp</Item>
+        <Item key={999} id={999} completo={true}>aula design ux/ui</Item>
+    </Lista>
   </React.StrictMode>
 );
 

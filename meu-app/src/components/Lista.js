@@ -5,24 +5,25 @@ class Lista extends React.Component{
         // eslint-disable-next-line no-unused-expressions
         super(props);
 
-        this.state = {
-            items: [
-                { id: 0, nome: 'item1', completo: false },
-                { id: 1, nome: 'item2', completo: false },
-                { id: 3, nome: 'item3', completo: true },
-                { id: 4, nome: 'item4', completo: false }
-            ]
-        }
+        // this.state = {
+        //     items: [
+        //         { id: 0, nome: 'item1', completo: false },
+        //         { id: 1, nome: 'item2', completo: false },
+        //         { id: 3, nome: 'item3', completo: true },
+        //         { id: 4, nome: 'item4', completo: false }
+        //     ]
+        // }
     }
     render(){
         return (
             <>
                 <ul>
-                    { this.state.items.map((item => (
+                { React.Children.map( this.props.children, child => child.type == Item ? child : null ) }
+                    {/* { this.state.items.map((item => (
                         <Item key={ item.id } completo={item.completo}>
                             { item.nome }
                         </Item>
-                    ))) }
+                    ))) } */}
                 </ul>
             </>
         )
@@ -44,4 +45,4 @@ class Item extends React.Component{
         )
     }
 }
-export { Lista }
+export { Lista, Item }
