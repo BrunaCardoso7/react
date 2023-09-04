@@ -22,7 +22,7 @@ class App4 extends React.Component{
             return(
                 <>
                     <input type="text" value={ this.state.nome } onChange={ this.changeTxtName }/>
-                    <button onClick={ this.persistNome }>salvar</button>
+                    <button onClick={ this.persistNome }>SHOW TEXT</button>
                 </>
             )
         }
