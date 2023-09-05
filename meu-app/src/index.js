@@ -7,19 +7,14 @@ import { App3 } from './components/App3';
 import { App4 } from './components/App4';
 import { App5 } from './components/App5';
 import { Lista, Item } from './components/Lista';
+import { Formulario } from './components/Formulario';
 import reportWebVitals from './reportWebVitals';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Lista>
-        quero arro
-        <Item key={999} id={999} completo={true}>lavar as louças</Item>
-        <Item key={999} id={999} completo={false}>terminar curso de reat</Item>
-        <Item key={999} id={999} completo={false}>voltar ao bootcamp</Item>
-        <Item key={999} id={999} completo={true}>aula design ux/ui</Item>
-    </Lista>
+    <Formulario></Formulario>
   </React.StrictMode>
 );
 

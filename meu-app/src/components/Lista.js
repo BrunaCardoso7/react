@@ -1,6 +1,7 @@
 import React from "react";
 
 class Lista extends React.Component{
+    // eslint-disable-next-line no-useless-constructor
     constructor(props){
         // eslint-disable-next-line no-unused-expressions
         super(props);
